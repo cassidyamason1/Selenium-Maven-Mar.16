@@ -30,7 +30,7 @@ public class LoginTest extends BaseClass {
 	@Test
 	public void LoginSuccessTest() {
 
-		test = report.startTest("LoginFailureTest");
+		test = report.startTest("LoginSuccessTest");
 		
 		LoginPage login2 = new LoginPage();
 		login2.LoginFunction("cassidyamason@gmail.com","Watermelon#1");
@@ -42,7 +42,7 @@ public class LoginTest extends BaseClass {
 	@Parameters({"Param1","Param2"})
 	public void ParameterizedTest(String UsernameVal, String PasswordVal) {
 		
-		test = report.startTest("LoginFailureTest");
+		test = report.startTest("ParameterizedTest");
 		
 		LoginPage login3 = new LoginPage();
 		login3.LoginFunction(UsernameVal, PasswordVal);
@@ -53,7 +53,7 @@ public class LoginTest extends BaseClass {
 	@Test
 	public void ExternalDataTest() {
 		
-		test = report.startTest("LoginFailureTest");
+		test = report.startTest("ExternalDataTest");
 		
 		String UsernameVal = sheet.getRow(1).getCell(0).getStringCellValue();
 		String PasswordVal = sheet.getRow(1).getCell(1).getStringCellValue(); 
